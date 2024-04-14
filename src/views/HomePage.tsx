@@ -11,10 +11,10 @@ export const HomePage = () => {
   
   return (
     <>
-        <h1 className="mx-16 text-4xl font-bold">Recipes</h1>
+        <h1 className="sm:mx-16 mb-16 text-4xl font-bold">Recipes</h1>
 
         {hasDrinks ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 mx-16 my-20 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 sm:mx-16 sm:my-20 gap-12">
             {drinks.drinks.map((drink) => (
                 <DrinkCard 
                     key={drink.idDrink}
