@@ -26,7 +26,6 @@ export default function Modal() {
       
     }
     
-    
     return ingredients
   }
 
@@ -71,6 +70,15 @@ export default function Modal() {
                     Instructions
                   </Dialog.Title>
                   <p className='text-lg'>{selectedRecipe.strInstructions}</p>
+
+                  <div className=' mt-5 flex justify-between gap-4'>
+                    <button type='button' className='w-full rounded bg-gray-600 p-3 font-bold text-white shadow hover:bg-gray-500 uppercase' onClick={closeModal}>
+                      Close
+                    </button>
+                    <button type='button' className='w-full rounded bg-orange-600 p-3 font-bold text-white shadow hover:bg-orange-500 uppercase' onClick={}>
+                      Add to favorites
+                    </button>
+                  </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
